@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product-list">
+            <input type="text" placeholder="Search all product here..." class="search-bar">
+            <button class="search-button">Search</button>
+            <div class="categories">
+                <button>Ice Coffee</button>
+                <button>Hot Coffee</button>
+                <button>Artisan Tea</button>
+                <button>Ice Mojito</button>
+                <button>Beverage</button>
+            </div>
+            <div class="products">
+                <!-- Products will be dynamically generated -->
+            </div>
+        </div>
+        <div class="cart">
+            <h2>Cart</h2>
+            <ul class="cart-items">
+                <!-- Cart items will be dynamically generated -->
+            </ul>
+            <div class="totals">
+                <div>Subtotal: <span id="subtotal">$0.00</span></div>
+                <div>Discount (10%): <span id="discount">$0.00</span></div>
+                <div>Gratuity: <span id="gratuity">$0.00</span></div>
+                <div>Total: <span id="total">$0.00</span></div>
+            </div>
+            <button class="print-button">Print Receipt</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
